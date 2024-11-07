@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Відгуки користувачів</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body id="second">
+    <div id="sidebar" class="sidebar" style="z-index: 2;">
+        <br>
+        <input type="search" name="search" id="search" placeholder="Search...">
+        <br>
+        <a href="index.html">Головна</a>
+        <a href="#categories">Категорії</a>
+        <a href="#products">Товари</a>
+        <a href="#about">Про нас</a>
+        <a href="seryo.html">Відгуки</a>
+        
+    </div>
+
+    <button id="openSidebar" class="open-btn">☰</button>
+
+<div class="container my-5">
+    <h2 class="text-center">Відгуки наших користувачів</h2>
+    <p class="text-center">Поділіться своєю думкою про наші товари та обслуговування</p>
+
+    <div class="review-form my-4">
+        <h4>Залишити відгук</h4>
+        <form>
+            <div class="form-group">
+                <label for="userName">Ім'я</label>
+                <input type="text" class="form-control" id="userName" placeholder="Ваше ім'я">
+            </div>
+            <div class="form-group">
+                <label for="userReview">Відгук</label>
+                <textarea class="form-control" id="userReview" rows="3" placeholder="Напишіть свій відгук"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Надіслати відгук</button>
+        </form>
+    </div>
+
+    <div class="reviews">
+        <div class="card review-card mb-3">
+            <div class="card-body" style="background-color: #333333;">
+                <h5 class="card-title">Іван Петров</h5>
+                <p class="card-text">Чудовий магазин! Відмінний сервіс та швидка доставка. Я дуже задоволений покупкою.</p>
+                <p class="text-muted">Дата: 05.11.2024</p>
+            </div>
+        </div>
+        
+        <div class="card review-card mb-3">
+            <div class="card-body" style="background-color: #333333;">
+                <h5 class="card-title">Марія Ковальчук</h5>
+                <p class="card-text">Знайшла тут все, що шукала. Дякую за якісні товари та професійне обслуговування!</p>
+                <p class="text-muted">Дата: 02.11.2024</p>
+            </div>
+        </div>
+
+    
+
+    </div>
+</div>
+<button id="scrollTop" title="Наверх">↑</button>
+
+<script>
+    // Показати або приховати кнопку прокрутки до верху
+    window.onscroll = function() {
+        var scrollTopButton = document.getElementById("scrollTop");
+        scrollTopButton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    };
+    
+    document.getElementById('scrollTop').onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // Бокова панель з автоматичним згортанням
+    var sidebar = document.getElementById("sidebar");
+    document.getElementById("openSidebar").onmouseenter = function() {
+        sidebar.style.left = "0";
+    };
+    sidebar.onmouseleave = function() {
+        sidebar.style.left = "-250px";
+    };
+
+    // Модальне вікно для входу
+    var modal = document.getElementById("modal");
+    var loginButton = document.getElementById("loginButton");
+    var closeModal = document.getElementById("closeModal");
+
+    loginButton.onclick = function() {
+        modal.style.display = "block";
+    };
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    };
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

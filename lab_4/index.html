@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин 00-их</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Бокова панель навігації -->
+    <div id="sidebar" class="sidebar">
+        <br>
+        <input type="search" name="search" id="search" placeholder="Search...">
+        <br>
+        <a href="#promo">Акція</a>
+        <a href="#categories">Категорії</a>
+        <a href="#products">Товари</a>
+        <a href="#about">Про нас</a>
+        <a href="seryo.html">Відгуки</a>
+        <a href="#modal" id="loginButton">Вхід</a>
+        
+    </div>
+
+    <!-- Кнопка для бокової панелі -->
+    <button id="openSidebar" class="open-btn">☰</button>
+
+    <!-- Хедер -->
+    <header>
+        <h1>Інтернет Магазин 00-их</h1>
+    </header>
+
+    <!-- Акційні товари -->
+    <section id="promo">
+        <h2>Акційні товари</h2>
+        <div class="promo-item" style="margin-left: 40%;">
+            <div class="promo-overlay">
+                <img  src="/F/3.jpg" alt="Акційний товар">
+                <div class="promo-text">Товар зі знижкою</div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Категорії -->
+    <section id="categories">
+        <h2>Категорії</h2>
+        <div class="category">
+            <div class="category-item" style="background-image: url('tetris.jpg');">
+                <span>Ігри</span>
+            </div>
+            <div class="category-item" style="background-image: url('boxes.jpg');">
+                <span>Подарункові бокси</span>
+            </div>
+            <div class="category-item" style="background-image: url('sweets.jpg');">
+                <span>Солодощі</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Товари по категоріям -->
+    <section id="products">
+        <h2 style=" text-align: center;">Товари</h2>
+        
+        <!-- Категорія Ігри -->
+        <h3 style=" text-align: center;">Ігри</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="F/tetris.jpg" alt="Тетріс">
+                <p>Ціна: 499 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/tamagotchi.webp" alt="Тамагочі">
+                <p>Ціна: 499 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/page.jpg" alt="Пейджер">
+                <p>Ціна: 399 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/ipod.jpg" alt="айпод">
+                <p>Ціна: 1999 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/CD-Sony.webp" alt="СД-плеєр">
+                <p>Ціна: 999 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/sony-cfs-w600.jpg" alt="Магнітофон">
+                <p>Ціна: 1499 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/likhtaryk.png" alt="Ліхтарик">
+                <p>Ціна: 49 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/pen.webp" alt="Ручка 4 кольори">
+                <p>Ціна: 39 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/pensil.png" alt="олівець">
+                <p>Ціна: 29 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/pruzhynka.png" alt="Пружинка">
+                <p>Ціна: 49 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/kaleydoskop.webp" alt="Калейдоскоп">
+                <p>Ціна: 59 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/shtamp.webp" alt="Штамп">
+                <p>Ціна: 19 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/vodyana_ihrashka.webp" alt="Водяна-іграшка">
+                <p>Ціна: 89 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/postrybunchyk.png" alt="Пострибунчик">
+                <p>Ціна: 39 грн</p>
+                <button>Придбати</button>
+            </div>
+        </div>
+
+        <!-- Категорія Подарункові бокси -->
+        <h3 style="text-align: center;">Подарункові бокси</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="F/box0.jpg" alt="Бокс 1">
+                <p>Ціна: 499 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/box1.jpg" alt="Бокс 2">
+                <p>Ціна: 999 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/box2.jpg" alt="Бокс 3">
+                <p>Ціна: 1499 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/box3.jpg" alt="Бокс 4">
+                <p>Ціна: 1999 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/box4.jpg" alt="Бокс 5">
+                <p>Ціна: 2499 грн</p>
+                <button>Придбати</button>
+            </div>
+        </div>
+
+        <!-- Категорія Солодощі -->
+        <h3 style="text-align: center;">Солодощі</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="F/kyslytsya.webp" alt="Кислиця">
+                <p>Ціна: 5 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/turbo.webp" alt="Турбо">
+                <p>Ціна: 6 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/Korsarz.png" alt="Корсар">
+                <p>Ціна: 39 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/kloun.png" alt="Клоун">
+                <p>Ціна: 39 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/crazy_roll.png" alt="Жуйка">
+                <p>Ціна: 39 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/sigaret.png" alt="Цукерки">
+                <p>Ціна: 39 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/solomka.png" alt="Соломка">
+                <p>Ціна: 19 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/loveis.png" alt="Гумка">
+                <p>Ціна: 5 грн</p>
+                <button>Придбати</button>
+            </div>
+            <div class="product">
+                <img src="F/donald.webp" alt="Гумка">
+                <p>Ціна: 5 грн</p>
+                <button>Придбати</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Про нас -->
+    <section id="about">
+        <h2>Про нас</h2>
+        <p>Ми спеціалізуємося на товарах, що нагадують дитинство та молодість у 00-их. Від ігор до солодощів!</p>
+    </section>
+
+    <!-- Кнопка для прокрутки нагору -->
+    <button id="scrollTop" title="Наверх">↑</button>
+
+    <!-- Модальне вікно для входу -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Вхід</h2>
+            <input type="text" placeholder="Логін">
+            <input type="password" placeholder="Пароль">
+            <button>Увійти</button>
+        </div>
+    </div>
+
+    <script>
+        // Показати або приховати кнопку прокрутки до верху
+        window.onscroll = function() {
+            var scrollTopButton = document.getElementById("scrollTop");
+            scrollTopButton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+        };
+        
+        document.getElementById('scrollTop').onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // Бокова панель з автоматичним згортанням
+        var sidebar = document.getElementById("sidebar");
+        document.getElementById("openSidebar").onmouseenter = function() {
+            sidebar.style.left = "0";
+        };
+        sidebar.onmouseleave = function() {
+            sidebar.style.left = "-250px";
+        };
+
+        // Модальне вікно для входу
+        var modal = document.getElementById("modal");
+        var loginButton = document.getElementById("loginButton");
+        var closeModal = document.getElementById("closeModal");
+
+        loginButton.onclick = function() {
+            modal.style.display = "block";
+        };
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        };
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+</html>
